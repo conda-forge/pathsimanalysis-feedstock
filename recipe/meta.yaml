@@ -1,5 +1,5 @@
 {% set name = "pathsimanalysis" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pathsimanalysis-{{ version }}.tar.gz
-  sha256: fe43644916a47b7bbb0eaaba7ff4f3cd0e7e7a9389cb1fb3e6197f3275235b44
+  sha256: 999e915f237f6d615bcf81882d7102a9fd92456d54439e43d75f4b1569718638
 
 build:
   noarch: python
@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9,<3.12
+    - python >=3.9,<3.13
     - setuptools >=40.9.0
     - wheel
     - pip
   run:
-    - python >=3.9,<3.12
+    - python >=3.9,<3.13
     - mdanalysis >=2.0.0
     - scipy >=1.5.0
     - matplotlib-base >=1.5.1
