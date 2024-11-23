@@ -1,5 +1,5 @@
 {% set name = "pathsimanalysis" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pathsimanalysis-{{ version }}.tar.gz
-  sha256: 999e915f237f6d615bcf81882d7102a9fd92456d54439e43d75f4b1569718638
+  sha256: afd63ec143d2ab28a11c4c530f3f8132ed0aec447391f8345f4fe8e68be8ed08
 
 build:
   noarch: python
